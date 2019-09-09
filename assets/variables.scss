@@ -1,0 +1,7 @@
+@import "~bootstrap/scss/functions";
+
+$blue: #eee !default;
+$primary: $blue !default;
+
+// Bootstrap vars last, because of their use of '!default'.
+@import "~bootstrap/scss/variables";
