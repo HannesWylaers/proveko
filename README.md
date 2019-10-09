@@ -1,6 +1,6 @@
 # proveko_nuxt.be
 
-> Proveko.be
+> A nuxt.js project for http://www.proveko.be
 
 ## Build Setup
 
