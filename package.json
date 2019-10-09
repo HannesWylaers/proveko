@@ -13,31 +13,44 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
-    "express": "^4.16.4",
-    "bootstrap-vue": "^2.0.0-rc.11",
-    "bootstrap": "4.3"
+    "bootstrap": "4.3",
+    "bootstrap-vue": "^2.0.0",
+    "cross-env": "^5.2.1",
+    "express": "^4.17.1",
+    "nuxt": "^2.9.2",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.15.1",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-config-standard": ">=12.0.0",
-    "eslint-loader": "^2.1.2",
-    "eslint-plugin-import": ">=2.16.0",
-    "eslint-plugin-jest": ">=22.3.0",
-    "eslint-plugin-node": ">=8.0.1",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-promise": ">=4.0.1",
-    "eslint-plugin-standard": ">=4.0.0",
-    "eslint-plugin-vue": "^5.2.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^5.2.3",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.18.9",
-    "prettier": "^1.16.4",
-    "sass-loader": "^8.0.0",
-    "vue2-google-maps": "^0.10.7"
-  }
+    "nodemon": "^1.19.2",
+    "autoprefixer": "^7.2.3",
+    "precss": "^2.0.0",
+    "sass-loader": "^8.0.0"
+  },
+  "browserslist": [
+    "Chrome >= 45",
+    "Firefox ESR",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ]
 }

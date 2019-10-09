@@ -22,9 +22,16 @@ module.exports = {
   loading: { color: '#fff' },
 
   /*
+    ** Style resources
+  */
+  styleResources: {
+    scss: '@/assets/scss/*.scss'
+  },
+
+  /*
    ** Global CSS
    */
-  css: ['@/assets/variables.scss'],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
@@ -34,10 +41,9 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt'
   ],
-  transpile: [/^vue2-google-maps($|\/)/],
+  transpile: [],
   /*
    ** Build configuration
    */
