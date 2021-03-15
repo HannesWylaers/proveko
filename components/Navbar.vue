@@ -1,59 +1,78 @@
 <template>
-  <div class="border-primary border-bottom">
+  <div class="app-nav border-primary border-bottom-thick">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <nuxt-link to="/" class="navbar-brand">
-          <img src="../assets/images/logo_proveko.svg" width="230" height="70" alt="Proveko"/>
-        </nuxt-link>
-        <div id="navbarNav" class="collapse navbar-collapse d-flex justify-content-between">
-          <ul class="navbar-nav">
-            <nuxt-link v-for="(expertise, index) in expertises" :key="index" :to="expertise.path" class="nav-link">
-              {{ expertise.name }}
-            </nuxt-link>
-          </ul>
-        </div>
-      </nav>
+      <b-navbar toggleable="lg" class="px-0">
+        <b-navbar-brand>
+          <nuxt-link to="/" class="navbar-brand">
+            <img src="../static/logo_proveko.svg" width="200" height="50" alt="Proveko"></img>
+          </nuxt-link>
+        </b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse" />
+
+        <b-collapse id="nav-collapse" is-nav>
+          <div class="ml-auto">
+            <div class="d-md-flex justify-content-md-end">
+              <b-navbar-nav>
+                <b-nav-item v-for="parent in json.nav.parents" :key="parent.name" :href="parent.path">
+                  <small>{{ parent.name }}</small>
+                </b-nav-item>
+              </b-navbar-nav>
+            </div>
+
+            <div class="d-md-flex justify-content-md-end">
+              <b-navbar-nav>
+                <span
+                  v-for="child in json.nav.children"
+                  :key="child.name"
+                >
+                  <b-nav-item v-if="!child.subs" :href="child.path">
+                    {{ child.name }}
+                  </b-nav-item>
+
+                  <span v-if="child.subs">
+                    <b-nav-item-dropdown :text="child.name" right>
+                      <b-dropdown-item
+                        v-for="sub in child.subs"
+                        :key="sub.name"
+                        :href="sub.path"
+                        class="text-"
+                      >
+                        {{ sub.name }}
+                      </b-dropdown-item>
+                    </b-nav-item-dropdown>
+                  </span>
+              </span>
+            </b-navbar-nav>
+            </div>
+          </div>
+        </b-collapse>
+      </b-navbar>
     </div>
   </div>
 </template>
+
 <script>
+import { BNavbar, BCollapse } from 'bootstrap-vue';
+import dbData from '../assets/db-data.json';
+
 export default {
+  components: {
+    BNavbar,
+    BCollapse,
+  },
   data() {
     return {
-      expertises: [{ name: 'Plaatsbeschrijvingen', path: 'Plaatsbeschrijvingen' }]
-    }
-  }
-}
+      json: dbData,
+    };
+  },
+};
 </script>
 <style>
-  .brand {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.5em;
-    color: #39b982;
-    text-decoration: none;
+  .app-nav .nav-item .nav-link {
+    padding: .25rem;
   }
-
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-  }
-
-  .nav .nav-link {
-    box-sizing: border-box;
-    margin: 0 5px;
-    color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-  }
-
-  .nav .nav-item.router-link-exact-active {
-    color: #39b982;
-    border-bottom: solid 2px #39b982;
-  }
-
-  .nav a {
-    display: inline-block;
+  .app-nav.border-bottom-thick {
+    border-bottom: 7px solid;
   }
 </style>

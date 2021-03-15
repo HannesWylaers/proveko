@@ -11,21 +11,30 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'description', content: 'Proveko – Uw partner voor een kwalitatieve begeleiding van uw dossier zowel bouwkundig als bij huur. Bel gratis voor eerste advies.' },
+      { name: 'keywords', content: 'plaatsbeschrijving bouwcoördinatie expertise koen verzelen proveko huur deinze zulte gent partner energie milieu zekerheid kwaliteit confederatie vastgoed expertisebureau aannemer architect kantoor vastgoed immo consultant bouw bouwadviseur' },
+      { name: 'author', content: 'Hannes Wylaers' },
+      { name: 'og:title', content: "Proveko – Plaatsbeschrijvingen – Bouwcoördinatie – Energie-Milieu – Vastgoedexpertise" },
+      { name: 'og:type', content: "website" },
+      { name: 'og:url', content: "http://www.proveko.be" },
+      { name: 'og:image', content: "/logo_proveko.svg" },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' },
+    ]
   },
 
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#1e9ec0' },
 
   /*
     ** Style resources
   */
   styleResources: {
-    scss: '@/assets/scss/*.scss'
+    scss: './assets/scss/main.scss'
   },
 
   /*
@@ -35,14 +44,25 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: '~plugins/ga.js', mode: 'client' }
+  ],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/style-resources',
+    ['nuxt-gmaps', {
+      key: 'AIzaSyCojjQQoihPaSqfSMvPJEH12GK6fmDOYjo',
+      libraries: ['places']
+    }]
   ],
+  bootstrapVue: {
+    bootstrapCSS: false, // Or `css: false`
+    bootstrapVueCSS: false // Or `bvCSS: false`
+  },
   transpile: [],
   /*
    ** Build configuration

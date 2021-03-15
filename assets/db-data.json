@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "parents": [
+      {
+        "name": "Referenties & getuigenissen",
+        "path": "/referenties-getuigenissen"
+      },
+      {
+        "name": "Nuttige links",
+        "path": "/nuttige-links"
+      },
+      {
+        "name": "Contact",
+        "path": "/contact"
+      }
+    ],
+    "children": [
+      {
+        "name": "Bouwcoördinatie",
+        "path": "/bouwcoordinatie",
+        "subs": [
+          {
+            "name": "Voor particulieren",
+            "path": "/bouwcoordinatie-particulieren"
+          },
+          {
+            "name": "Voor ondernemingen",
+            "path": "/bouwcoordinatie-ondernemingen"
+          }
+        ]
+      },
+      {
+        "name": "Engineering",
+        "path": "/engineering"
+      },
+      {
+        "name": "Energie & milieu",
+        "path": "/energiemilieu"
+      },
+      {
+        "id": "plaatsbeschrijving",
+        "name": "Plaatsbeschrijving",
+        "path": "/plaatsbeschrijving",
+        "subs": [
+          {
+            "name": "Bouwkundig",
+            "path": "/plaatsbeschrijving-bouw"
+          },
+          {
+            "name": "Huren en verhuren",
+            "path": "/plaatsbeschrijving-huur"
+          }
+        ]
+      },
+      {
+        "name": "Vastgoedexpertise",
+        "path": "/vastgoedexpertise"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "id": 1,
+      "aanspreking": "Dag Koen,",
+      "text": "Ook wij vonden het aangenaam en leuk om met U samen te hebben mogen werken, waarvoor een “dikke merci”.",
+      "bedrijf": "Ottevaere Bouwmaterialen – Oudenaarde "
+    },
+    {
+      "id": 2,
+      "aanspreking": "Koen,",
+      "text": "Succes! Het was inderdaad aangenaam samenwerken.",
+      "bedrijf": "Verstraete Development team – Kortrijk"
+    },
+    {
+      "id": 3,
+      "aanspreking": "Dag Koen,",
+      "text": "Succes in uw verdere carrière! Ik heb graag met u samengewerkt.",
+      "bedrijf": "Hans De Smet Van Damme elektro"
+    },
+    {
+      "id": 4,
+      "aanspreking": "Dag Koen,",
+      "text": "Bedankt voor je correcte en aangename houding in de projecten waar we hebben samengewerkt.",
+      "bedrijf": "AG Tech – Zulte"
+    },
+    {
+      "id": 5,
+      "aanspreking": "Beste Koen,",
+      "text": "ik wens je veel succes in je verdere professionele carrière en feliciteer je met je ondernemerschap. Uiteraard koester ik de herinnering aan onze vruchtbare maar tevens leuke samenwerking aan het project.",
+      "bedrijf": "bvba Wylein & partners ArchitectenBureau"
+    },
+    {
+      "id": 6,
+      "aanspreking": "Beste Koen,",
+      "text": "Onze samenwerking was voor mij altijd correct met wederzijds respect. Misschien tot nog eens...",
+      "bedrijf": "Wolftech – Vilvoorde"
+    },
+    {
+      "id": 7,
+      "aanspreking": "Beste Koen,",
+      "text": "Is al een tijdje geleden.\n Het was altijd leuk samenwerken met jou.\n Veel succes in de onderneming en wie weet kruisen onze wegen nog elkaar.",
+      "bedrijf": "Hegrybo nv"
+    }
+  ],
+  "referenties": [
+    {
+      "id": 1,
+      "title": "Residentie Marthe Massin",
+      "type": {
+        "label": "Type",
+        "content": "eengezins- en meergezinswoningen"
+      },
+      "locatie": {
+        "label": "Locatie",
+        "content": "Sint-Amands"
+      },
+      "architect": {
+        "label": "Architect",
+        "content": "Demeestere+Garmyn & partners bvba"
+      },
+      "bouwheer": {
+        "label": "Bouwheer",
+        "content": "Hyboma nv"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Nieuwe Molens Gent",
+      "type": {
+        "label": "Type",
+        "content": "meergezinswoningen"
+      },
+      "locatie": {
+        "label": "Locatie",
+        "content": "Gent"
+      },
+      "architect": {
+        "label": "Architect",
+        "content": "SHECI.be"
+      },
+      "bouwheer": {
+        "label": "Bouwheer",
+        "content": "Tondelier Development NV"
+      }
+    },
+    {
+      "id": "3",
+      "title": "TWIGGY Gent",
+      "type": {
+        "label": "Type",
+        "content": "optopping bovenop bestaand winkelpand te centrum Gent"
+      },
+      "locatie": {
+        "label": "Locatie",
+        "content": "Gent "
+      },
+      "architect": {
+        "label": "Architect",
+        "content": "Studio Remco Siebring (Amsterdam)"
+      },
+      "bouwheer": {
+        "label": "Bouwheer",
+        "content": "Twiggy’s bvba"
+      }
+    }
+  ],
+  "expertises": {
+    "plaatsbeschrijving": {
+      "id": "plaatsbeschrijving",
+      "video": "https://www.youtube.com/embed/uc5nJMaNlME",
+      "intro": {
+        "title": "Plaatsbeschrijving",
+        "text": "Wij zijn gespecialiseerd in plaatsbeschrijvingen voor bij bouw als voor bij huur"
+      }
+    },
+    "plaatsbeschrijvingBouw": {
+      "id": "plaatsbeschrijving",
+      "video": "https://www.youtube.com/embed/uc5nJMaNlME",
+      "intro": {
+        "title": "Plaatsbeschrijving BOUW, ook voor jou!",
+        "text": "Met meer dan 15 jaar ervaring treden wij op voor particulieren, promotoren, architecten, aannemers en verzekeringmaatschappijen in het opstellen van gedetailleerde en volledige plaatsbeschrijvingen voorafgaand en na beëindigen van bouwwerken."
+      }
+    },
+    "plaatsbeschrijvingHuur": {
+      "id": "plaatsbeschrijving",
+      "video": "https://www.youtube.com/embed/5Ycqi5BHcmk",
+      "intro": {
+        "title": "Waarom een plaatsbeschrijving bij HUUR?",
+        "text": "Eenvoudig beantwoord omdat het nu eenmaal verplicht is. Anderzijds is het een document in ieders belang en dat beter omstandig en zeer gedetailleerd wordt opgesteld. Hoe beter de plaatsbeschrijving bij huur is opgesteld, hoe minder discussie nadien? Twijfelt u? Dat mag uiteraard, daarom een kleine controle: staan het aantal sleutels genoteerd, aanwezige handleidingen genoteerd, alle lampen geteld en of ze werken, werkt het koelkastlampje,… ?"
+      }
+    },
+    "bouwcoordinatie": {
+      "id": "bouwcoordinatie",
+      "title": "Bouwcoördinatie",
+
+      "video": "https://www.youtube.com/embed/VXyLhUQen1A",
+      "intro": {
+        "title": "Bouwcoördinatie",
+        "text": "Bij opstart van het kantoor in 2014 kon Koen Verzelen terugvallen op zestien jaar ervaring als werfleider en projectleider bij aannemingsbedrijf klasse 7. Hij stond als schoolverlater en startend werfleider destijds tussen het volk op en rond de werf, leerde zijn vak van projectcoördinatie Ruwbouw over Technieken tot Totaalafwerking."
+      }
+    },
+    "bouwcoordinatienietparticulier": {
+      "id": "bouwcoordinatie",
+      "video": "https://www.youtube.com/embed/VXyLhUQen1A",
+      "intro": {
+        "title": "Bouwcoordinatie voor ondernemingen",
+        "text": "Voor architecten, promotoren en (bouw)bedrijven: werfopvolging van ruwbouw tot totaalafwerking."
+      }
+    },
+    "bouwcoordinatieparticulier": {
+      "id": "bouwcoordinatie",
+      "video": "https://www.youtube.com/embed/VXyLhUQen1A",
+      "intro": {
+        "title": "Bouwcoordinatie particulieren",
+        "text": "Wij kijken graag met jou naar je nieuwbouw- of verbouwingsproject en delen graag onze jarenlange ervaring. Dit start bij ons in elk mogelijk project met een eerste vrijblijvende kennismaking daar elk bouwproject immers uniek is en ook altijd een specifieke en persoonlijke aanpak vereist.",
+        "text2": "Indien gewenst leiden wij u ook graag even rond in onze modelwoning en delen al onze expertise en weetjes. Ook dan ben je nog volledig vrij in de verdere samenwerking."
+      }
+    },
+    "energiemilieu": {
+      "id": "energiemilieu",
+      "video": "https://www.youtube.com/embed/1d49xMG2avY",
+      "intro": {
+        "title": "Energie & Milieu",
+        "text": "Als officieel erkend energiedeskundige begeleiden we jou graag richting het meest optimale en correcte EnergiePrestatieCertificaat (EPC) waarin we naast het louter opstellen van het document ook graag het nodige advies geven om te gaan optimaliseren."
+      }
+    },
+    "vastgoedexpertise": {
+      "id": "vastgoedexpertise",
+      "video": "https://www.youtube.com/embed/VZNlqmm1x0s",
+      "intro": {
+        "title": "Vastgoedexpertise"
+      }
+    },
+    "engineering": {
+      "id": "engineering",
+      "intro": {
+        "title": "Engineering"
+      }
+    }
+  },
+  "contact": {
+    "straatEnNr": "Sparrenstraat 11",
+    "postcodeStad": "9870&nbsp;Machelen&nbsp;a/d&nbsp;Leie",
+    "telVast": "09/380.40.86",
+    "telMobiel": "0495/26.25.07",
+    "telInfo": "(6/7, dagelijks van 8u - 20u)",
+    "emailAdres": "info@proveko.be",
+    "btw": "BE 0550.761.644",
+    "iban": "BE81 1030 3403 2924"
+  }
+}

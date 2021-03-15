@@ -1,1 +1,5 @@
-@import "./variables";
+@import "./_variables";
+@import "./_custom";
+
+// Bootstrap and BootstrapVue SCSS files
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

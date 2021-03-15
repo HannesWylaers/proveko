@@ -10,16 +10,13 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
-    'prettier/vue'
+    'airbnb',
   ],
-  plugins: [
-    'prettier'
-  ],
+  plugins: [],
   // add your custom rules here
   rules: {
     'nuxt/no-cjs-in-config': 'off',
     'max-len': [1, 120, 4],
+    'vue/comment-directive': 'off',
   }
 }
